@@ -1,15 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navigation from "./Navigation/Navigation.js";
+import LandingPage from './LandingPage/LandingPage.js';
+import ProjectsPage from './ProjectsPage/ProjectsPage.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Currently under construction!
-        </p>
-      </header>
+    <div>
+      <Navigation />
+      <LandingPage />
+      <ProjectsPage />
     </div>
   );
 }
