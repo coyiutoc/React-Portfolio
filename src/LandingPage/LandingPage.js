@@ -1,29 +1,33 @@
 import React, {Component} from "react";
+import {useSpring, animated, config} from 'react-spring'
 import "./LandingPage.scss";
 
-class LandingPage extends Component {
+function LandingPage () {
 
-  render () {
+    let contentProps = useSpring({config: {duration: 1000}, delay: 1200, opacity: 1, from: {opacity: 0}});
+    let scrollProps = useSpring({config: {duration: 1000}, delay: 1500, opacity: 1, from: {opacity: 0}});
+
     return (
       <div id="LandingPage">
-        <div class = "landing-body">
-          <div class = "typewriter"> 
-            <div class = "typewriter-container">
+        <div className = "landing-body">
+          <div className = "typewriter"> 
+            <div className = "typewriter-container">
               <h1>Hi, I'm Caitlin.</h1>
             </div>
           </div>
-          <br></br>
-          I'm a weird mix between a <b>designer</b> and <b>developer</b>. 
-          <br></br>
-          <br></br>
-          <div class="tag-line">Currently, I'm pursuing my Masters in Human-Computer <br></br> Interaction at Carnegie Mellon University.</div>
+          <animated.div className = "landing-body-contents" style={contentProps}>
+            <br></br>
+            I'm a weird mix between a <b>designer</b> and <b>developer</b>. 
+            <br></br>
+            <br></br>
+            <div className ="tag-line">Currently, I'm pursuing my Masters in Human-Computer Interaction at Carnegie Mellon University.</div>
+          </animated.div>
         </div>
-        <div class = "down-arrow">
-          Scroll.
-        </div>
+        <animated.div className = "down-arrow" style={scrollProps}>
+          SCROLL
+        </animated.div>
       </div>
     );
-  }
 }
 
 export default LandingPage;

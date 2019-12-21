@@ -1,11 +1,13 @@
 @import '../colors.scss';
 
 #Navigation {
-  z-index: 1;
+  z-index: 5;
   width: 100vw;
   // background-color: rgba(242, 169, 60, 0.8);
-  background-color: rgba(0, 0, 0, 0.8);
-  // border-bottom: 1px solid rgba(255, 238, 0, 0.2);
+  // background-color: rgba(0, 0, 0, 0.8);
+  background-color: $dark-grey;
+  border-bottom: 1px solid black;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
   height: 70px;
@@ -16,14 +18,13 @@
   #links {
     padding-right: 5vw;
     width: 50vw;
-    // border: 1px solid red;
     display: flex;
     justify-content: flex-end;
 
     a {
       align-self: center;
-      padding-left: 20px;
-      padding-right: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
       color: grey;
     }
 
@@ -34,7 +35,6 @@
   }
 
   #name-link {
-    font-size: 1.5rem;
     padding-left: 5vw;
     width: 50vw;
     // border: 1px solid red;
@@ -48,6 +48,7 @@
   }
 
   a {
+    position: relative;
     background:
        linear-gradient(
          to bottom, orange 0%,
@@ -59,9 +60,18 @@
     color: white;
     text-decoration: none;
     transition: background-size .2s;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-family: 'Menlo', serif;
   }
   
   a:hover {
     background-size: 1rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #Navigation {
+    display: none;
   }
 }

@@ -1,4 +1,20 @@
+@import '../colors.scss';
+
 #ProjectsPage {
-  background-color: black;
+  background-color: $dark-grey;
+  padding-bottom: 20vh;
   height: 100vh;
+
+  .projects-header-container {
+    padding-top: 100px;
+    padding-left: 5vw;
+
+    .projects-header {
+      font-family: 'menlo', serif;
+      color: $orange;
+      font-size: 1.2rem;
+      letter-spacing: 3px;
+    }
+  }
+
 }

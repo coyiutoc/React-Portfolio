@@ -18,12 +18,12 @@ class Navigation extends Component {
       // </div>
       <div id = "Navigation">
         <div id="name-link">
-          <a href = "">caitlin coyiuto</a>
+          <a href = "">CAITLIN COYIUTO</a>
         </div>
         <div id="links">
-          <a href = "">projects</a>
-          <a href = "">about</a>
-          <a href = "">resume</a>
+          <a href = "">PROJECTS</a>
+          <a href = "">ABOUT</a>
+          <a href = "">RESUME</a>
         </div>
       </div>
     );

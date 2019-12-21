@@ -17,13 +17,18 @@
 
   .landing-body {
     text-align: center;
-    width: 800px;
+    width: 500px;
     padding: 10px;
   }
 
   .tag-line {
-    font-size: 1rem;
     color: grey;
+  }
+
+  @media screen and (max-width: 767px) {
+    .landing-body {
+      width: 300px;
+    }
   }
 }
 
@@ -31,6 +36,10 @@
   position: absolute;
   bottom: 0px;
   padding-bottom: 20px;
+  color: grey;
+  font-size: 0.8rem;
+  font-family: 'Menlo', serif;
+  letter-spacing: 2px;
 }
 
 .typewriter-container {

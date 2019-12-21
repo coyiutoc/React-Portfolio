@@ -1,0 +1,90 @@
+@import '../../colors.scss';
+
+.project-block {
+  margin-left: 20vw;
+  margin-top: 20px;
+  width: 60vw;
+  // border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+
+  .project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30vw;
+
+    .project-title {
+      font-family: 'Lato', serif;
+      font-size: 3rem;
+      padding-left: 20px;
+      padding-bottom: 10px;
+    }
+
+    .project-subtitle {
+      letter-spacing: 2px;
+      padding-left: 20px;
+      padding-bottom: 30px;
+      color: $orange;
+    }
+
+    .project-text {
+      z-index: 1;
+      position: relative;
+      width: 33vw;
+      height: 10vh;
+      padding: 20px;
+      font-family: 'menlo', serif;
+      display: flex;
+      align-items: center;
+    }
+
+    .project-text-bg {
+      z-index: 1;
+      position: relative;
+      width: 33vw;
+      height: 10vh;
+      border-radius: 5px;
+      background-color: black;
+      opacity: 0.9;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .project-stack {
+      padding-top: 30px;
+      padding-left: 20px;
+      font-family: 'Menlo', serif;
+      color: $grey;
+      font-size: 0.8rem;
+    }
+
+    .project-button {
+      font-family: 'Menlo', serif;
+      letter-spacing: 2px;
+      color: $grey;
+      background-color: Transparent;
+      border: 1px solid $grey;
+      border-radius: 5px;
+      width: 10vw;
+      padding: 5px 0 5px 0;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+  }
+
+  .img-container {
+    display: flex; 
+    justify-content: flex-end;
+
+    img {
+      object-fit: cover;
+      width: 30vw;
+      height: 45vh;
+      border-radius: 10px;
+      z-index: 0;
+      filter: grayscale(50%) opacity(0.8);
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    }
+  }
+  
+}

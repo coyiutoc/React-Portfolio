@@ -5,7 +5,7 @@ body, html {
 }
 
 html {
-  font-size: 16px;
+  font-size: 13px;
 }
 
 @media screen and (max-width: 767px) {
@@ -16,11 +16,12 @@ html {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 3.5rem;
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
 }
 
 body {
