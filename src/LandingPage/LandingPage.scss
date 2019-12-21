@@ -1,15 +1,17 @@
 @import '../colors.scss';
 
 #LandingPage {
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
   font-size: 1.2rem;
   letter-spacing: 2px;
 
   b {
-    color: $purple;
+    color: orange;
     font-weight: bolder;
   }
 
@@ -25,6 +27,12 @@
   }
 }
 
+.down-arrow {
+  position: absolute;
+  bottom: 0px;
+  padding-bottom: 20px;
+}
+
 .typewriter-container {
   display:inline-block;
 }
@@ -32,7 +40,7 @@
 .typewriter h1 {
   text-align: center;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .10em solid $purple; /* The typwriter cursor */
+  border-right: .10em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .05em; /* Adjust as needed */
@@ -50,5 +58,5 @@
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: $purple; }
+  50% { border-color: orange; }
 }

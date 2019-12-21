@@ -18,14 +18,9 @@ class LandingPage extends Component {
           <br></br>
           <div class="tag-line">Currently, I'm pursuing my Masters in Human-Computer <br></br> Interaction at Carnegie Mellon University.</div>
         </div>
-        {/* <div class = "landing-body">
-          <div class="tag-line">
-            I'm a weird cross between a researcher, programmer and musicophile.
-          </div>
-        </div>
         <div class = "down-arrow">
-          <h2>></h2>
-        </div> */}
+          Scroll.
+        </div>
       </div>
     );
   }

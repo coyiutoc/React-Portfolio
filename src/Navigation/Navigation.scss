@@ -1,22 +1,21 @@
 @import '../colors.scss';
 
-$nav-height: 10vh;
-
 #Navigation {
     position:fixed;
+    bottom: 0px;
     left: 50px;
-    color: $purple;
+    color: white;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    // height: 100vh;
     // border: 1px solid red;
 
     .vertical {
-      border-left: 1px solid $purple; 
-      height: $nav-height;
+      border-left: 1px solid white; 
+      height: 8vh;
       // position: absolute; 
       z-index: 1; 
     }
@@ -26,12 +25,14 @@ $nav-height: 10vh;
       padding: 10px;
       // border: 1px solid red;
       font-size: 0.7rem;
+      color: white;
 
       &:hover {
-        background-color: yellow;
+        background-color: $purple;
         transition: 0.5s;
       }
     }
+
     // .links {
     //   z-index: 2;
     //   // position: absolute;
@@ -50,7 +51,7 @@ $nav-height: 10vh;
 @media screen and (max-width: 767px) {
   #Navigation {
     position:fixed;
-    display: block;
+    display: none;
     left: 50%;
     top: 20px;
 

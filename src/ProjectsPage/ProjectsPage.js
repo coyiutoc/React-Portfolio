@@ -6,7 +6,9 @@ class ProjectsPage extends Component {
   render () {
     return (
       <div id="ProjectsPage">
-        ksdjhgkjdhkgs
+        <div className = "projects-header">
+          projects.
+        </div>
       </div>
     );
   }
