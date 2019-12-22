@@ -2,10 +2,14 @@
 
 body, html {
   overflow-x: hidden;
+
+  button {
+    outline: none;
+  }
 }
 
 html {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 @media screen and (max-width: 767px) {

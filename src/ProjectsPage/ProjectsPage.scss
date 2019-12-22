@@ -3,7 +3,6 @@
 #ProjectsPage {
   background-color: $dark-grey;
   padding-bottom: 20vh;
-  height: 100vh;
 
   .projects-header-container {
     padding-top: 100px;
@@ -14,6 +13,22 @@
       color: $orange;
       font-size: 1.2rem;
       letter-spacing: 3px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .projects-header-container {
+      padding-left: 0px;
+      padding-top: 100px;
+      display: flex;
+      justify-content: center;
+  
+      .projects-header {
+        font-family: 'menlo', serif;
+        color: $orange;
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+      }
     }
   }
 

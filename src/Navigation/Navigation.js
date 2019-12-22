@@ -18,7 +18,7 @@ class Navigation extends Component {
       // </div>
       <div id = "Navigation">
         <div id="name-link">
-          <a href = "">CAITLIN COYIUTO</a>
+          <a href = ""> &#123; CAITLIN COYIUTO &#125;</a>
         </div>
         <div id="links">
           <a href = "">PROJECTS</a>

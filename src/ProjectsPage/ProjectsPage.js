@@ -12,20 +12,28 @@ class ProjectsPage extends Component {
       <div id="ProjectsPage">
         <div className = "projects-header-container">
           <div className = "projects-header">
-            <Fade top>
+            <Fade top >
             PROJECTS
             </Fade>
           </div>
         </div>
         <ProjectBlock 
-           img = {asyncVRImg}
-           title = "Async VR"
-           subtitle = "UX RESEARCH & DEVELOPMENT"
-           text = "Academic research on asynchronous VR collaboration at UBC's Multimodal User Experience Lab. 
-           Involved ideation of new features, implementation, and 
-           usability testing. "
-           stack = "HTC VIVE | UNITY | C# | USABILITY TESTING"/>
-      </div>
+          img = {asyncVRImg}
+          title = "Async VR"
+          subtitle = "UX RESEARCH & DEVELOPMENT"
+          text = "Academic research on asynchronous VR collaboration at UBC's Multimodal User Experience Lab. 
+          Involved in ideation of new features, implementation, and 
+          usability testing. "
+          stack = "HTC VIVE | UNITY | C# | USABILITY TESTING" />
+        <ProjectBlock 
+          img = {asyncVRImg}
+          title = "Async VR"
+          subtitle = "UX RESEARCH & DEVELOPMENT"
+          text = "Academic research on asynchronous VR collaboration at UBC's Multimodal User Experience Lab. 
+          Involved in ideation of new features, implementation, and 
+          usability testing. "
+          stack = "HTC VIVE | UNITY | C# | USABILITY TESTING" />
+    </div>
     );
   }
 }
