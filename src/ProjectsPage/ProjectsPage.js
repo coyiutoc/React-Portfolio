@@ -1,9 +1,10 @@
 import React, {Component} from "react";
 import ProjectBlock from "./ProjectBlock/ProjectBlock.js";
+import ProjectMiniBlock from "./ProjectMiniBlock/ProjectMiniBlock.js";
+
 import Fade from 'react-reveal/Fade';
 import "./ProjectsPage.scss";
-
-import asyncVRImg from "../assets/imgs/async-vr.png";
+import PROJECT_DATA from "../data.js";
 
 class ProjectsPage extends Component {
 
@@ -13,26 +14,34 @@ class ProjectsPage extends Component {
         <div className = "projects-header-container">
           <div className = "projects-header">
             <Fade top >
-            PROJECTS
+            SELECTED PROJECTS
             </Fade>
           </div>
         </div>
-        <ProjectBlock 
-          img = {asyncVRImg}
-          title = "Async VR"
-          subtitle = "UX RESEARCH & DEVELOPMENT"
-          text = "Academic research on asynchronous VR collaboration at UBC's Multimodal User Experience Lab. 
-          Involved in ideation of new features, implementation, and 
-          usability testing. "
-          stack = "HTC VIVE | UNITY | C# | USABILITY TESTING" />
-        <ProjectBlock 
-          img = {asyncVRImg}
-          title = "Async VR"
-          subtitle = "UX RESEARCH & DEVELOPMENT"
-          text = "Academic research on asynchronous VR collaboration at UBC's Multimodal User Experience Lab. 
-          Involved in ideation of new features, implementation, and 
-          usability testing. "
-          stack = "HTC VIVE | UNITY | C# | USABILITY TESTING" />
+        {PROJECT_DATA.map(function(obj, index){
+            return  <ProjectBlock 
+                     key = {index}
+                     title = {obj.title}
+                     img = {obj.img}
+                     subtitle = {obj.subtitle}
+                     text = {obj.text}
+                     stack = {obj.stack}/>
+        })}
+        <div id ="otherBlock" className = "projects-header-container">
+          <div className = "projects-header">
+            <Fade top >
+              OTHER NOTEWORTHY PROJECTS
+            </Fade>
+          </div>
+        </div>
+        <div className = "mini-projects-container">
+          <ProjectMiniBlock />
+          <ProjectMiniBlock />
+          <ProjectMiniBlock />
+          <ProjectMiniBlock />
+          <ProjectMiniBlock />
+          <ProjectMiniBlock />
+        </div>
     </div>
     );
   }
