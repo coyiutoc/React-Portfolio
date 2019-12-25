@@ -1,123 +1,5 @@
 @import '../../colors.scss';
 
-$sm-block-height: 400px;
-
-.project-block-sm {
-  width: 80vw;
-  height: $sm-block-height;
-  margin-left: 10vw;
-  margin-top: 10vh;
-
-  .project-img-sm {
-    img {
-      width: 80vw;
-      height: $sm-block-height;
-      object-fit: cover;
-      border-radius: 10px;
-      z-index: 0;
-      filter: grayscale(50%) opacity(0.8);
-      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
-    }
-
-    .project-img-overlay {
-      position:absolute;
-      width: 80vw;
-      height: $sm-block-height;
-      background-color: rgba(0, 0, 0, 0.7);
-      z-index: 1;
-      display: flex;
-      align-items: center;
-      border-radius: 10px;
-
-      .project-text-sm {
-        padding: 30px;
-        display: flex;
-        // justify-content: center;
-        flex-direction: column;
-        // text-align: left;
-
-        .project-divider-sm {
-          border: 1px solid rgba(255, 255, 255, 0.4);
-          margin: 20px 0 20px 0;
-        }
-
-        .project-title-sm {
-          font: "lato", sans-serif;
-          font-size: 3rem;
-        }
-
-        .project-subtitle-sm {
-          padding-top: 5px;
-          letter-spacing: 2px;
-          color: $orange;
-          font-size: 1.2rem;
-        }
-
-        .project-body-sm {
-          font-size: 1.3rem;
-          line-height: 2rem;
-          padding-bottom: 20px;
-        }
-
-        .project-stack-sm {
-          letter-spacing: 2px;
-          color: white;
-          font-size: 1rem;
-          padding-top: 5px;
-        }
-
-        .project-button-sm {
-          margin-top: 20px;
-          padding: 20px 0 20px 0;
-          width: 200px;
-          font-family: 'Menlo', serif;
-          letter-spacing: 2px;
-          color: $grey;
-          background-color: Transparent;
-          border: 1px solid $grey;
-          border-radius: 5px;
-          padding: 5px 0 5px 0;
-          margin-top: 20px;
-          transition: 0.5s;
-
-          &:hover {
-            background-color: $orange;
-            border: 1px solid $orange;
-            color: white;
-          }
-        }
-
-        .project-mini-icons {
-          margin-top: 20px;
-          display: flex;
-          color: $orange;
-          flex-direction: row;
-    
-          .project-mini-date {
-            font-size: 0.8rem;
-            flex: 1;
-            font-family: 'Menlo', serif;
-            align-self: center;
-          }
-    
-          a {
-            font-size: 2rem;
-            color: $orange;
-            transition: 0.2s;
-            padding: 0px 5px 0px 5px;
-    
-            &:hover {
-              color: white;
-            }
-          }
-        }
-      }
-     }
-
-  }
-
-}
-
 .project-block {
   margin-left: 10vw;
   margin-top: 10vh;
@@ -156,7 +38,7 @@ $sm-block-height: 400px;
       z-index: 1;
       position: relative;
       width: 33vw;
-      height: 10vh;
+      height: 15vh;
       padding: 20px;
       line-height: 1.5rem;
       display: flex;
@@ -167,7 +49,7 @@ $sm-block-height: 400px;
       z-index: 1;
       position: relative;
       width: 33vw;
-      height: 10vh;
+      height: 15vh;
       border-radius: 5px;
       background-color: black;
       opacity: 0.9;

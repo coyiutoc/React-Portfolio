@@ -3,6 +3,7 @@ import MediaQuery from 'react-responsive';
 import Fade from 'react-reveal/Fade';
 
 import "./ProjectBlock.scss";
+import "../ProjectBlockSm.scss";
 
 class ProjectBlock extends Component {
 
@@ -25,7 +26,7 @@ class ProjectBlock extends Component {
                 {this.props.stack}
               </div>
               <button className="project-button">READ MORE</button>
-            </div>
+            </div>  
             <div className = "img-container">
               <img src = {this.props.img}>
               </img>

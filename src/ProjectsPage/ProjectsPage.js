@@ -18,7 +18,7 @@ class ProjectsPage extends Component {
             </Fade>
           </div>
         </div>
-        {PROJECT_DATA.map(function(obj, index){
+        {PROJECT_DATA["main"].map(function(obj, index){
             return  <ProjectBlock 
                      key = {index}
                      title = {obj.title}
@@ -35,12 +35,17 @@ class ProjectsPage extends Component {
           </div>
         </div>
         <div className = "mini-projects-container">
-          <ProjectMiniBlock />
-          <ProjectMiniBlock />
-          <ProjectMiniBlock />
-          <ProjectMiniBlock />
-          <ProjectMiniBlock />
-          <ProjectMiniBlock />
+          {PROJECT_DATA["sub"].map(function(obj, index){
+              return  <ProjectMiniBlock 
+                      key = {index}
+                      title = {obj.title}
+                      img = {obj.img}
+                      subtitle = {obj.subtitle}
+                      text = {obj.text}
+                      stack = {obj.stack}
+                      date = {obj.date}
+                      icons = {obj.icons}/>
+          })}
         </div>
     </div>
     );

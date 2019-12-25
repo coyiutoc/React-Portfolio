@@ -1,10 +1,9 @@
 import React, {Component} from "react";
 import MediaQuery from 'react-responsive';
 import Fade from 'react-reveal/Fade';
-import img from '../../assets/imgs/magnolias.jpg';
 
 import "./ProjectMiniBlock.scss";
-import "../ProjectBlock/ProjectBlock.scss";
+import "../ProjectBlockSm.scss";
 
 class ProjectMiniBlock extends Component {
 
@@ -19,31 +18,42 @@ class ProjectMiniBlock extends Component {
           <div className="project-mini-block">
             <div className="project-mini-content">
               <div className="project-mini-title">
-                The Artist is Always In
+                {this.props.title}
               </div>
               <div className="project-mini-taglines">
                 <div className="project-mini-subtitle">
-                  UX RESEARCH
+                  {this.props.subtitle}
                 </div>
               </div>
               <div className="project-mini-divider">
               </div>
               <div className="project-mini-text">
-                UX research focusing on adding transparency to the public art process. Produced an on-site physical display
-                that citizens can interact with. 
+                {this.props.text}
               </div>
               <div className="project-mini-stack">
-                CONTEXTUAL INQUIRY | THINK-ALOUD | SPEED DATING
+                {this.props.stack}
               </div>
               <div className="project-mini-icons">
                 <div className="project-mini-date">
-                  OCT - DEC 2019
+                  <button className="project-button">READ MORE</button>
                 </div>
-                <a href = ""><i class="fab fa-github"></i></a>
-                <a href = ""><i class="fab fa-github"></i></a>
+                {this.props.icons.map(function(obj, index){
+                  if (obj.iconType === "INVISION") {
+                    return  <a href = {obj.URL}><i class="fab fa-invision"></i></a>
+                  }
+                  else if (obj.iconType === "WEBSITE") {
+                    return <a href = {obj.URL}><i class="fas fa-link"></i></a>
+                  }
+                  else if (obj.iconType === "GITHUB") {
+                    return <a href = {obj.URL}><i class="fab fa-github"></i></a>
+                  }
+                  else if (obj.iconType === "IMAGE") {
+                    return <a href = {obj.URL} target="_blank"><i class="fas fa-file-image"></i></a>
+                  }
+                })}
               </div>
             </div>
-            <img src = {img}></img>
+            <img src = {this.props.img}></img>
           </div>
         </MediaQuery>
         <MediaQuery maxWidth={992}>
@@ -52,29 +62,41 @@ class ProjectMiniBlock extends Component {
               <div className="project-img-overlay">
                 <div className="project-text-sm">
                   <div className="project-title-sm">
-                    The Artist is Always In
+                    {this.props.title}
                   </div>
                   <div className="project-subtitle-sm">
-                    UX RESEARCH
+                    {this.props.subtitle}
                   </div>
                   <div className="project-divider-sm"></div>
                   <div className="project-body-sm">
-                  UX research focusing on adding transparency to the public art process. Produced an on-site physical display
-                  that citizens can interact with. 
+                    {this.props.text}
                   </div>
                   <div className="project-stack-sm">
-                  CONTEXTUAL INQUIRY | THINK-ALOUD | SPEED DATING
+                    {this.props.stack}
                   </div>
                   <div className="project-mini-icons">
-                    <div className="project-mini-date">
-                      OCT - DEC 2019
-                    </div>
-                    <a href = ""><i class="fab fa-github"></i></a>
-                    <a href = ""><i class="fab fa-github"></i></a>
+                    <button className="project-button">
+                      READ MORE
+                    </button>
+                    <div className="buffer"></div>
+                    {this.props.icons.map(function(obj, index){
+                        if (obj.iconType === "INVISION") {
+                          return  <a href = {obj.URL}><i class="fab fa-invision"></i></a>
+                        }
+                        else if (obj.iconType === "WEBSITE") {
+                          return <a href = {obj.URL}><i class="fas fa-link"></i></a>
+                        }
+                        else if (obj.iconType === "GITHUB") {
+                          return <a href = {obj.URL}><i class="fab fa-github"></i></a>
+                        }
+                        else if (obj.iconType === "IMAGE") {
+                          return <a href = {obj.URL} target="_blank"><i class="fas fa-file-image"></i></a>
+                        }
+                    })}
                     </div>
                   </div>
               </div>
-              <img src={img}></img>
+              <img src={this.props.img}></img>
             </div>
           </div>
         </MediaQuery>
