@@ -6,9 +6,13 @@ import atlantisImg from "./assets/imgs/atlantis2.jpg";
 import metImg from "./assets/imgs/met.png";
 import ubcVizImg from "./assets/imgs/faculty-viz.png";
 import madLabImg from "./assets/imgs/madlab.jpg";
+import saveOnImg from "./assets/imgs/save-on.png";
+import surfcalImg from "./assets/imgs/surfcal.png";
 
 import UCREPoster from "./assets/files/artist-always-in.jpg";
 import atlantisVideo from "./assets/files/atlantis-hub-video.mp4";
+import saveOnDemo from "./assets/files/saveon_demo.gif";
+import surfCalDemo from "./assets/files/surfcal_demo.gif";
 
 const PROJECT_DATA = {
   main: [
@@ -44,7 +48,8 @@ const PROJECT_DATA = {
       date:  "OCT - DEC 2019",
       icons: [
         {iconType: "IMAGE", URL: UCREPoster}
-      ]
+      ],
+      readMore: true,
     },
     {
       img: atlantisImg,
@@ -55,31 +60,58 @@ const PROJECT_DATA = {
       date:  "OCT - NOV 2019",
       icons: [
         {iconType: "IMAGE", URL: atlantisVideo}
-      ]
+      ],
+      readMore: false,
     },
     {
       img: metImg,
       title: "Met Visualizations",
-      subtitle: "DATA VISUALIZATION",
-      text: "A series of visualizations displaying the distribution of the Metropolitan Museum of Art's collection by location, time, medium and artist.",
+      subtitle: "DEVELOPMENT",
+      text: "A series of visualizations displaying the distribution of the Metropolitan Museum of Art's collection by location, time, medium and artist. Extracted data using python scripts to ping the Met's API.",
       stack: "D3.JS | PYTHON | FLASK",
       date:  "OCT - DEC 2019",
       icons: [
         {iconType: "WEBSITE", URL: "https://ketakisrao.github.io/Met/"},
         {iconType: "GITHUB", URL: "https://github.com/ketakisrao/Met"}
-      ]
+      ],
+      readMore: false,
     },
     {
       img: ubcVizImg,
       title: "UBC Faculty Visualizations",
-      subtitle: "DATA VISUALIZATION",
-      text: "Data visualizations on gender differences for faculty renumeration at UBC. Data was extracted from the 2018 faculty report, and using a python web-crawler for POST requests.",
+      subtitle: "DEVELOPMENT",
+      text: "Data visualizations on gender differences for faculty renumeration at UBC. Data was extracted from the 2018 faculty report and directory using a python web-crawler.",
       stack: "D3.JS | PYTHON | NODE.JS",
       date:  "JUN - JUL 2019",
       icons: [
         {iconType: "WEBSITE", URL: "https://ubc-faculty-viz.herokuapp.com/"},
         {iconType: "GITHUB", URL: "https://github.com/coyiutoc/UBC-Faculty-Viz"}
-      ]
+      ],
+      readMore: false,
+    },
+    {
+      img: saveOnImg,
+      title: "Save-On Foods",
+      subtitle: "UX RESEARCH & DESIGN",
+      text: "Involved an assessment of usability issues for the currently existing Save-On Foods website, and the creation of a med-fi prototype to remedy these issues.",
+      stack: "COGNITIVE WALKTHROUGH | THINK-ALOUD | USABILITY-TESTING",
+      date:  "AUG - NOV 2018",
+      icons: [
+        {iconType: "IMAGE", URL: saveOnDemo},
+      ],
+      readMore: true,
+    },
+    {
+      img: surfcalImg,
+      title: "SURFCal",
+      subtitle: "DEVELOPMENT",
+      text: "Designed and built a relational database to support functionality of a calendar web app. Database adhered to DBMS normalization forms such as BCNF and 3NF.",
+      stack: "MYSQL | PHP | APACHE",
+      date:  "MAY - JUN 2018",
+      icons: [
+        {iconType: "IMAGE", URL: surfCalDemo},
+      ],
+      readMore: false,
     },
     {
       img: madLabImg,
@@ -90,7 +122,8 @@ const PROJECT_DATA = {
       date:  "AUG - DEC 2015",
       icons: [
         {iconType: "WEBSITE", URL: "https://repository.wellesley.edu/library_awards/16/"},
-      ]
+      ],
+      readMore: false,
     },
   ]
 };

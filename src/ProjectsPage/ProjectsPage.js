@@ -44,7 +44,8 @@ class ProjectsPage extends Component {
                       text = {obj.text}
                       stack = {obj.stack}
                       date = {obj.date}
-                      icons = {obj.icons}/>
+                      icons = {obj.icons}
+                      readMore = {obj.readMore}/>
           })}
         </div>
     </div>

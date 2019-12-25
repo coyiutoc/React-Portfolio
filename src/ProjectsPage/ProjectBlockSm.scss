@@ -61,7 +61,7 @@ $sm-block-height: 500px;
 
         .project-stack-sm {
           letter-spacing: 2px;
-          color: $grey;
+          color: white;
           font-size: 1rem;
           padding-top: 5px;
         }
@@ -72,9 +72,9 @@ $sm-block-height: 500px;
           width: 200px;
           font-family: 'Menlo', serif;
           letter-spacing: 2px;
-          color: $grey;
+          color: $orange;
           background-color: Transparent;
-          border: 1px solid $grey;
+          border: 1px solid $orange;
           border-radius: 5px;
           padding: 5px 0 5px 0;
           margin-top: 20px;
@@ -101,9 +101,9 @@ $sm-block-height: 500px;
             width: 200px;
             font-family: 'Menlo', serif;
             letter-spacing: 2px;
-            color: $grey;
+            color: $orange;
             background-color: Transparent;
-            border: 1px solid $grey;
+            border: 1px solid $orange;
             border-radius: 5px;
             padding: 5px 0 5px 0;
             transition: 0.5s;

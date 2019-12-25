@@ -35,7 +35,11 @@ class ProjectMiniBlock extends Component {
               </div>
               <div className="project-mini-icons">
                 <div className="project-mini-date">
-                  <button className="project-button">READ MORE</button>
+                  {this.props.readMore === true ? 
+                    (<button className="project-button">
+                            READ MORE
+                    </button>) : ""
+                  }
                 </div>
                 {this.props.icons.map(function(obj, index){
                   if (obj.iconType === "INVISION") {
@@ -75,9 +79,11 @@ class ProjectMiniBlock extends Component {
                     {this.props.stack}
                   </div>
                   <div className="project-mini-icons">
-                    <button className="project-button">
-                      READ MORE
-                    </button>
+                    {this.props.readMore === true ? 
+                      (<button className="project-button">
+                              READ MORE
+                      </button>) : ""
+                    }
                     <div className="buffer"></div>
                     {this.props.icons.map(function(obj, index){
                         if (obj.iconType === "INVISION") {
