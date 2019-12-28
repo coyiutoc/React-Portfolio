@@ -7,10 +7,6 @@ import "../ProjectBlockSm.scss";
 
 class ProjectMiniBlock extends Component {
 
-  constructor(props){
-    super(props)
-  }
-
   render () {
     return (
       <Fade big>
@@ -43,16 +39,16 @@ class ProjectMiniBlock extends Component {
                 </div>
                 {this.props.icons.map(function(obj, index){
                   if (obj.iconType === "INVISION") {
-                    return  <a href = {obj.URL}><i class="fab fa-invision"></i></a>
+                    return  <a href = {obj.URL} key={index}><i class="fab fa-invision"></i></a>
                   }
                   else if (obj.iconType === "WEBSITE") {
-                    return <a href = {obj.URL}><i class="fas fa-link"></i></a>
+                    return <a href = {obj.URL} key={index}><i class="fas fa-link"></i></a>
                   }
                   else if (obj.iconType === "GITHUB") {
-                    return <a href = {obj.URL}><i class="fab fa-github"></i></a>
+                    return <a href = {obj.URL} key={index}><i class="fab fa-github"></i></a>
                   }
                   else if (obj.iconType === "IMAGE") {
-                    return <a href = {obj.URL} target="_blank"><i class="fas fa-file-image"></i></a>
+                    return <a href = {obj.URL} key={index} target="_blank"><i class="fas fa-file-image"></i></a>
                   }
                 })}
               </div>
@@ -87,16 +83,16 @@ class ProjectMiniBlock extends Component {
                     <div className="buffer"></div>
                     {this.props.icons.map(function(obj, index){
                         if (obj.iconType === "INVISION") {
-                          return  <a href = {obj.URL}><i class="fab fa-invision"></i></a>
+                          return  <a href = {obj.URL} key={index}><i className="fab fa-invision"></i></a>
                         }
                         else if (obj.iconType === "WEBSITE") {
-                          return <a href = {obj.URL}><i class="fas fa-link"></i></a>
+                          return <a href = {obj.URL} key={index}><i className="fas fa-link"></i></a>
                         }
                         else if (obj.iconType === "GITHUB") {
-                          return <a href = {obj.URL}><i class="fab fa-github"></i></a>
+                          return <a href = {obj.URL} key={index}><i className="fab fa-github"></i></a>
                         }
                         else if (obj.iconType === "IMAGE") {
-                          return <a href = {obj.URL} target="_blank"><i class="fas fa-file-image"></i></a>
+                          return <a href = {obj.URL} key={index} target="_blank"><i className="fas fa-file-image"></i></a>
                         }
                     })}
                     </div>

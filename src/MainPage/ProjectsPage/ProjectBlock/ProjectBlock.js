@@ -1,15 +1,12 @@
 import React, {Component} from "react";
 import MediaQuery from 'react-responsive';
 import Fade from 'react-reveal/Fade';
+import {Link} from 'react-router-dom';
 
 import "./ProjectBlock.scss";
 import "../ProjectBlockSm.scss";
 
 class ProjectBlock extends Component {
-
-  constructor(props){
-    super(props)
-  }
 
   render () {
     return (
@@ -25,7 +22,7 @@ class ProjectBlock extends Component {
               <div className="project-stack">
                 {this.props.stack}
               </div>
-              <button className="project-button">READ MORE</button>
+              <Link to={this.props.pageURL}><button className="project-button">READ MORE</button></Link>
             </div>  
             <div className = "img-container">
               <img src = {this.props.img}>

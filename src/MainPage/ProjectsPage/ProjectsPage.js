@@ -4,7 +4,7 @@ import ProjectMiniBlock from "./ProjectMiniBlock/ProjectMiniBlock.js";
 
 import Fade from 'react-reveal/Fade';
 import "./ProjectsPage.scss";
-import PROJECT_DATA from "../data.js";
+import PROJECT_DATA from "../../data.js";
 
 class ProjectsPage extends Component {
 
@@ -25,7 +25,8 @@ class ProjectsPage extends Component {
                      img = {obj.img}
                      subtitle = {obj.subtitle}
                      text = {obj.text}
-                     stack = {obj.stack}/>
+                     stack = {obj.stack}
+                     pageURL = {obj.pageURL}/>
         })}
         <div id ="otherBlock" className = "projects-header-container">
           <div className = "projects-header">

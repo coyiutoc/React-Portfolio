@@ -1,0 +1,14 @@
+@import '../colors.scss';
+
+$navHeight: 70px;
+$navHorizontalTextPadding: 5vw;
+
+body {
+  background-color: black;
+}
+
+.project-page{
+  padding-top: $navHeight;
+  padding-left: $navHorizontalTextPadding;
+  color: white;
+}

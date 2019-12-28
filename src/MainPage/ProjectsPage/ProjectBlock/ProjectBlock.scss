@@ -1,4 +1,4 @@
-@import '../../colors.scss';
+@import '../../../colors.scss';
 
 .project-block {
   margin-left: 10vw;
@@ -30,7 +30,7 @@
     .project-subtitle {
       letter-spacing: 2px;
       padding-left: 20px;
-      padding-bottom: 30px;
+      padding-bottom: 20px;
       color: $orange;
     }
 
@@ -57,7 +57,7 @@
     }
 
     .project-stack {
-      padding-top: 30px;
+      padding-top: 20px;
       padding-left: 20px;
       font-family: 'Menlo', serif;
       color: $grey;
@@ -65,12 +65,12 @@
     }
 
     .project-button {
-      width: 10vw;
+      width: 150px;
       font-family: 'Menlo', serif;
       letter-spacing: 2px;
-      color: $grey;
+      color: $orange;
       background-color: Transparent;
-      border: 1px solid $grey;
+      border: 1px solid $orange;
       border-radius: 5px;
       padding: 5px 0 5px 0;
       margin-top: 20px;

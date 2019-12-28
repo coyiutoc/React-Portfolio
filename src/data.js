@@ -21,21 +21,24 @@ const PROJECT_DATA = {
       title: "CubeRover",
       subtitle: "UI DEVELOPMENT",
       text: "Development of UI components for the ground interface for CubeRover, a space rover launching to the Moon in 2021 with $79.5 million NASA funding.",
-      stack: "VUE/VUEX | D3.JS"
+      stack: "VUE/VUEX | D3.JS",
+      pageURL: "/projects/cuberover",
     },
     {
       img: asyncVRImg,
       title: "Async VR",
       subtitle: "UX RESEARCH & DEVELOPMENT",
       text: "Research on asynchronous VR collaboration at UBC's Multimodal User Experience Lab. Was involved in ideating new features, implementation, and usability testing. 2nd author in publication accepted into CSCW 2019.",
-      stack: "HTC VIVE | UNITY | C# | USABILITY TESTING"
+      stack: "HTC VIVE | UNITY | C# | USABILITY TESTING",
+      pageURL: "/projects/asyncvr",
     },
     {
       img: VCLImg,
       title: "VCL Web Framework",
       subtitle: "UX RESEARCH & DEVELOPMENT",
       text: "Redesign and modernization of the UBC Visual Cognition Lab's experimental framework. Iteratively designed and developed the framework so that it would be easily extendable by researchers in the lab. 2nd author in abstract submitted to VSS 2020.",
-      stack: "D3.JS | NODE.JS | JSPSYCH | EXPLORATORY STUDY"
+      stack: "D3.JS | NODE.JS | JSPSYCH | EXPLORATORY STUDY",
+      pageURL: "/projects/vcl",
     },
   ],
   sub: [

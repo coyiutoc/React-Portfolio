@@ -1,0 +1,66 @@
+@import '../../../colors.scss';
+
+$navHeight: 70px;
+$margins: 10vw;
+$bodyPadding: 60px;
+
+.heading-block {
+  background-color: black;
+  display: flex; 
+  flex-direction: column;
+
+  img {
+    width: 100vw;
+    height: 45vh;
+    object-fit: cover;
+    z-index: 0;
+    filter: grayscale(50%) opacity(0.8);
+  }
+
+  .heading-content {
+    padding: $bodyPadding $margins $bodyPadding $margins;
+
+    .heading-title {
+      font-size: 2.5rem;
+      font-weight: bolder;
+    }
+
+    .heading-block-divider {
+      border-bottom: 1px solid $grey;
+      margin: 30px 0 30px 0;
+    }
+
+    .heading-columns {
+      display: flex;
+      flex-direction: row;
+
+      .column-section {
+        width: 25%;
+        display: flex;
+        flex-direction: row;
+
+        > div:nth-of-type(1) {
+          font-family: "menlo", serif;
+          color: $orange;
+          font-weight: bold;
+          padding-right: 20px;
+          padding-top: 0.2rem;
+          font-size: 0.8rem;
+        }
+
+        > div:nth-of-type(2) {
+          font-size: 1rem;
+          padding-right: 5px;
+        }
+      }
+    }
+
+    .heading-body {
+      color: $light-grey;
+      margin-top: 30px;
+      font-size: 1.3rem;
+      line-height: 2rem;
+    }
+  }
+
+}

@@ -1,6 +1,7 @@
-@import '../colors.scss';
+@import '../../colors.scss';
 
 $sm-block-height: 500px;
+$project-button-width: 150px;
 
 .project-block-sm {
   width: 80vw;
@@ -69,7 +70,7 @@ $sm-block-height: 500px;
         .project-button-sm {
           margin-top: 20px;
           padding: 20px 0 20px 0;
-          width: 200px;
+          width: $project-button-width;
           font-family: 'Menlo', serif;
           letter-spacing: 2px;
           color: $orange;
@@ -98,7 +99,7 @@ $sm-block-height: 500px;
           }
 
           .project-button {
-            width: 200px;
+            width: $project-button-width;
             font-family: 'Menlo', serif;
             letter-spacing: 2px;
             color: $orange;
