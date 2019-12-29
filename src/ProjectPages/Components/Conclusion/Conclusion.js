@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import Fade from 'react-reveal/Fade';
 import "./Conclusion.scss";
-import { thisExpression } from "@babel/types";
 
 class Conclusion extends Component {
 
@@ -11,12 +10,12 @@ class Conclusion extends Component {
         <Fade>
           <div className="conclusion-body">
             <div className="conclusion-title">
-              Conclusion
+              {this.props.conclusion.title}
             </div>
             <div className="conclusion-divider">
             </div>
             <div className="conclusion-content">
-              {this.props.conclusion}
+              {this.props.conclusion.body}
             </div>
           </div>
         </Fade>

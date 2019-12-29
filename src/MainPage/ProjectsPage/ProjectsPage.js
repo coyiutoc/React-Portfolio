@@ -4,7 +4,7 @@ import ProjectMiniBlock from "./ProjectMiniBlock/ProjectMiniBlock.js";
 
 import Fade from 'react-reveal/Fade';
 import "./ProjectsPage.scss";
-import PROJECT_DATA from "../../data.js";
+import PROJECT_DATA from "../../data/data.js";
 
 class ProjectsPage extends Component {
 

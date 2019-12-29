@@ -1,18 +1,18 @@
-import asyncVRImg from "./assets/imgs/async-vr.png";
-import VCLImg from "./assets/imgs/vcl.png";
-import cuberoverImg from "./assets/imgs/cuberover.png";
-import magnoliasImg from './assets/imgs/magnolias.jpg';
-import atlantisImg from "./assets/imgs/atlantis2.jpg";
-import metImg from "./assets/imgs/met.png";
-import ubcVizImg from "./assets/imgs/faculty-viz.png";
-import madLabImg from "./assets/imgs/madlab.jpg";
-import saveOnImg from "./assets/imgs/save-on.png";
-import surfcalImg from "./assets/imgs/surfcal.png";
+import asyncVRImg from "../assets/imgs/async-vr.png";
+import VCLImg from "../assets/imgs/vcl.png";
+import cuberoverImg from "../assets/imgs/cuberover.png";
+import magnoliasImg from '../assets/imgs/magnolias.jpg';
+import atlantisImg from "../assets/imgs/atlantis2.jpg";
+import metImg from "../assets/imgs/met.png";
+import ubcVizImg from "../assets/imgs/faculty-viz.png";
+import madLabImg from "../assets/imgs/madlab.jpg";
+import saveOnImg from "../assets/imgs/save-on.png";
+import surfcalImg from "../assets/imgs/surfcal.png";
 
-import UCREPoster from "./assets/files/artist-always-in.jpg";
-import atlantisVideo from "./assets/files/atlantis-hub-video.mp4";
-import saveOnDemo from "./assets/files/saveon_demo.gif";
-import surfCalDemo from "./assets/files/surfcal_demo.gif";
+import UCREPoster from "../assets/files/artist-always-in.jpg";
+import atlantisVideo from "../assets/files/atlantis-hub-video.mp4";
+import saveOnDemo from "../assets/files/saveon_demo.gif";
+import surfCalDemo from "../assets/files/surfcal_demo.gif";
 
 const PROJECT_DATA = {
   main: [
