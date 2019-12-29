@@ -1,0 +1,35 @@
+@import '../../../colors.scss';
+
+$navHeight: 70px;
+$margins: 10vw;
+$bodyPadding: 70px;
+
+.conclusion {
+  padding: $bodyPadding $margins $bodyPadding $margins;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .conclusion-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: left;
+    width: 60%;
+
+    .conclusion-title {
+      font-size: 2.5rem;
+    }
+
+    .conclusion-divider {
+      border-bottom: 2px solid $orange;
+      margin: 20px 0 20px 0;
+    }
+
+    .conclusion-content {
+      font-size: 1.3rem;
+      line-height: 2rem;
+      color: $light-grey;
+    }
+  }
+}

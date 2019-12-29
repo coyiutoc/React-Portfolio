@@ -8,6 +8,7 @@ class HeadingBlock extends Component {
 
     return (
       <div className="heading-block">
+        <Fade>
         <img src = {this.props.data.img}></img>
         <div className="heading-content">
           <div className="heading-title">
@@ -49,6 +50,7 @@ class HeadingBlock extends Component {
             {this.props.data.body}
           </div>
         </div>
+        </Fade>
       </div>
     );
   }

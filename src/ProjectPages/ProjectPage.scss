@@ -1,14 +1,13 @@
 @import '../colors.scss';
 
-$navHeight: 70px;
-$navHorizontalTextPadding: 5vw;
-
-body {
-  background-color: black;
-}
-
-.project-page{
-  padding-top: $navHeight;
-  padding-left: $navHorizontalTextPadding;
+.project-page {
   color: white;
+
+  >div:nth-child(odd) {
+    background-color: black;
+  }
+
+  >div:nth-child(even) {
+    background-color: $dark-grey;
+  }
 }

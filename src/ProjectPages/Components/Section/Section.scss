@@ -1,0 +1,77 @@
+@import '../../../colors.scss';
+
+$navHeight: 70px;
+$margins: 10vw;
+$bodyPadding: 70px;
+
+.section {
+  padding: $bodyPadding $margins $bodyPadding $margins;
+
+  .columns {
+    display: flex;
+    flex-direction: row;
+
+    .left-column {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      padding-right: 30px;
+
+      .section-timeline {
+        font-family: 'Menlo', sans-serif;
+        color: $orange;
+        letter-spacing: 2px;
+        margin-bottom: 1rem;
+      }
+
+      .section-title {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+      }
+
+      .section-tagline {
+        font-size: 1.5rem;
+      }
+    }
+
+    .right-column {
+      padding-top: 2rem;
+      padding-left: 30px;
+      width: 60%;
+      font-size: 1.3rem;
+      line-height: 2rem;
+      color: $light-grey;
+
+      > div {
+        padding-bottom: 2rem;
+      }
+    }
+  }
+
+  .section-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    img {
+      width: 40%;
+      margin: 30px 10px 30px 10px;
+      border-radius: 10px;
+      transition: all ease .4s;
+      transition-property: transform, filter;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      filter: grayscale(60%) opacity(0.8);
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.08);
+        filter: none;
+      }
+    }
+
+    .img-sm {
+      width: 60%;
+    }
+  }
+}

@@ -2,10 +2,9 @@
 
 $navHeight: 70px;
 $margins: 10vw;
-$bodyPadding: 60px;
+$bodyPadding: 70px;
 
 .heading-block {
-  background-color: black;
   display: flex; 
   flex-direction: column;
 
@@ -21,7 +20,7 @@ $bodyPadding: 60px;
     padding: $bodyPadding $margins $bodyPadding $margins;
 
     .heading-title {
-      font-size: 2.5rem;
+      font-size: 3rem;
       font-weight: bolder;
     }
 
@@ -44,13 +43,14 @@ $bodyPadding: 60px;
           color: $orange;
           font-weight: bold;
           padding-right: 20px;
-          padding-top: 0.2rem;
+          padding-top: 0.6rem;
           font-size: 0.8rem;
         }
 
         > div:nth-of-type(2) {
           font-size: 1rem;
           padding-right: 5px;
+          line-height: 2rem;
         }
       }
     }
