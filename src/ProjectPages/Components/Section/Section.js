@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import Fade from 'react-reveal/Fade';
+import ReactHtmlParser from 'react-html-parser';
 import "./Section.scss";
 
 class Section extends Component {
@@ -28,13 +29,13 @@ class Section extends Component {
           </div>
           <div className="right-column">
             {this.props.data.body.map(function(text, index){
-              return  <div key={index}>{text}</div>
+              return  <div key={index}>{ReactHtmlParser(text)}</div>
             })}
           </div>
         </div>
         <div className="section-images">
           {this.props.data.img ? this.props.data.img.map(function(img, index){
-            return  <img className = {imgLength == 1 ? "img-sm": ""} src = {img} onClick={()=> window.open(img, "_blank")}></img>
+            return  <img className = {imgLength == 1 || index == (imgLength - 1)? "img-sm": ""} src = {img} onClick={()=> window.open(img, "_blank")}></img>
           }): ""}
         </div>
         </Fade>

@@ -8,6 +8,10 @@ $bodyPadding: 70px;
   display: flex; 
   flex-direction: column;
 
+  b {
+    color: white;
+  }
+  
   img {
     width: 100vw;
     height: 45vh;
@@ -60,6 +64,25 @@ $bodyPadding: 70px;
       margin-top: 30px;
       font-size: 1.3rem;
       line-height: 2rem;
+    }
+
+    .heading-buttons {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+
+      a {
+        font-size: 1.8rem;
+        color: $orange;
+        padding: 0 10px 5px 10px;
+
+        &:hover {
+          color: white;
+          cursor: pointer;
+        }
+      }
+    
     }
   }
 

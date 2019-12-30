@@ -1,5 +1,8 @@
 import React, {Component} from "react";
+import Tippy from '@tippy.js/react';
+import 'tippy.js/dist/tippy.css';
 import Fade from 'react-reveal/Fade';
+import ReactHtmlParser from 'react-html-parser';
 import "./HeadingBlock.scss";
 
 class HeadingBlock extends Component {
@@ -47,7 +50,42 @@ class HeadingBlock extends Component {
             </div>
           </div>
           <div className="heading-body">
-            {this.props.data.body}
+            {ReactHtmlParser(this.props.data.body)}
+          </div>
+          <div className="heading-buttons">
+              {this.props.data.icons.map(function(obj, index){
+              if (obj.iconType === "INVISION") {
+                return <a href = {obj.URL} key={index}><i class="fab fa-invision"></i></a>
+              }
+              else if (obj.iconType === "WEBSITE") {
+                return <a href = {obj.URL} key={index}><i class="fas fa-link"></i></a>
+              }
+              else if (obj.iconType === "GITHUB") {
+                return <a href = {obj.URL} key={index}><i class="fab fa-github"></i></a>
+              }
+              else if (obj.iconType === "IMAGE") {
+                return <Tippy
+                          content={obj.text}
+                          theme="bootstrap"
+                          distance={15}
+                          hideOnClick={false}
+                          placement="bottom"
+                        >
+                          <a href = {obj.URL} key={index} target="_blank"><i class="fas fa-file-image"></i></a>
+                        </Tippy>
+              }
+              else if (obj.iconType === "VIDEO") {
+                return <Tippy
+                          content={obj.text}
+                          theme="bootstrap"
+                          distance={15}
+                          hideOnClick={false}
+                          placement="bottom"
+                        >
+                          <a href = {obj.URL} key={index} target="_blank"><i class="fas fa-file-video"></i></a>
+                        </Tippy>
+              }
+            })}
           </div>
         </div>
         </Fade>
