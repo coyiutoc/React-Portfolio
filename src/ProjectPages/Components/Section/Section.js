@@ -35,7 +35,7 @@ class Section extends Component {
         </div>
         <div className="section-images">
           {this.props.data.img ? this.props.data.img.map(function(img, index){
-            return  <img className = {imgLength == 1 || index == (imgLength - 1)? "img-sm": ""} src = {img} onClick={()=> window.open(img, "_blank")}></img>
+            return  <img className = {imgLength == 1 || (index == (imgLength - 1) && imgLength > 2) ? "img-sm": ""} src = {img} onClick={()=> window.open(img, "_blank")}></img>
           }): ""}
         </div>
         </Fade>

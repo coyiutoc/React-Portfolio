@@ -19,6 +19,11 @@ import asyncVRvideo from "../assets/pages/asyncvr/cscw040.mp4";
 
 // VCL
 import vclheader from "../assets/pages/vcl/vclheader.JPG";
+import pocgif from "../assets/pages/vcl/poc.gif";
+import flowDiagram from "../assets/pages/vcl/flow_diagram.jpg";
+import visualsearchgif from "../assets/pages/vcl/visual_search.gif";
+import vcldocs1 from "../assets/pages/vcl/docs1.png";
+import vcldocs2 from "../assets/pages/vcl/docs2.png";
 
 const data = {
   vcl: {
@@ -26,16 +31,85 @@ const data = {
       img: vclheader,
       title: "VCL Web Framework",
       role: ["Research Assistant (Developer)"],
-      team: ["Prof. Ronald Rensink", "Madison Elliot", "VCL Correlations Team"],
+      team: ["Dr. Ronald Rensink", "Madison Elliot", "VCL Correlation Team"],
       stack: ["Node.js", "D3.js", "Javascript", "JsPsych", "HTML/CSS"],
       timeline: "May 2018 - July 2019",
-      body: "This project involves modernizing the Visual Cognition Lab's existing Java codebase to utilize modern web technologies. The old codebase had suffered from a lack of software maintenance and documentation updates, which led to many researchers having to 'hack' a version of the codebase to suit their needs, resulting in a proliferation of bugs and poor extensibility. <b>My challenge was to design a new framework in such a way that it would be easy to learn, use and extend by other researchers</b>, who many not necessarily have any formal programming experience, but must implement new visual experiments.",
+      body: "The Visual Cognition Lab's java codebase had suffered from a lack of software maintenance and documentation updates, which led to many researchers having to 'hack' a version of the codebase to suit their needs, resulting in a proliferation of bugs and poor extensibility. <b>My challenge was to design a new web framework in such a way that it would be easy to learn, use and extend by other researchers</b>, who many not necessarily have any formal programming experience, but must code new visual experiments.",
       icons: [
         {iconType: "GITHUB", URL: "https://github.com/coyiutoc/VCL-Web-Framework", text: "Github Repository"},
         {iconType: "WEBSITE", URL: "https://vcl-web-framework.herokuapp.com/", text: "Deployed Framework"},
         {iconType: "IMAGE", URL: "https://ubc-vcl.github.io/VCLWebFramework/manual/README.html", text: "Framework Documentation"},
       ],
     },
+    sections: [
+      {
+        title: "Literature Review & Information Gathering",
+        timeline: "MAY 2018",
+        tagline: "Researching potential web frameworks/libraries for vision science and conducting informal interviews.",
+        body: ["Prior to beginning any form of development, I first conducted a literature review of web frameworks used in vision science labs. Potential tools that were considered included JsPsych, D3.js, PsychoPy, E-Prime and MATLAB.",
+               "I additionally interviewed other members of the lab about their experiences with the current codebase, and how they were implementing new experiments. It appeared that many researchers were 'hacking' the code to fit their needs, making the codebase buggy, and were additionally not performing proper documentation of any major changes."
+              ],
+        img: null,
+      },
+      {
+        title: "Proof of Concept Experiments",
+        timeline: "JUN - JULY 2018",
+        tagline: "Implementing a standard visual experiment using web technologies.",
+        body: ["After discussions with other members of the team, I narrowed the potential technologies to be used to JsPsych for experimental control, D3.js for visualization, and Node.js for the backend.",
+               "I then implemented a standard visual experiment, a JND (Just Noticeable Difference) task, in which a participant had to discern which scatter plot displayed a more highly correlated dataset."
+              ],
+        img: [pocgif],
+      },
+      {
+        title: "Piloting the POCs",
+        timeline: "AUG 2018",
+        tagline: "Validating the experiments with other researchers.",
+        body: ["To ensure that output of the POC experiment was correct, researchers in the lab piloted the experiment to verify the experimental flow and data output. This was necessary to ensure visual output and performance were as expected, and comparable to that of the experiments run by the old Java codebase.",
+              ],
+        img: null,
+      },
+      {
+        title: "Specification Planning",
+        timeline: "SEP - OCT 2018",
+        tagline: "Outlining the framework architecture.",
+        body: ["Upon validating that the base, foundational experiment was correct, I performed an additional round of literature review on end-user programming methods and software development for scientific software. At this point, I was considering an <b>HCI-centric approach</b>, since I was developing a framework for researchers who did not necessarily have a lot of programming experience.",
+              "Additionally, I began to outline the overall architecture of the new framework. This required looking through different forms of visual experiments that existed in the original codebase, along with validating my understanding of the experimental methodology by interviewing the other researchers. This also ensured that the terminology that I was using to name potential classes and structures were in accordance with the proper terms that researchers were using."        
+              ],
+        img: [flowDiagram],
+      },
+      {
+        title: "Informal Exploratory Study",
+        timeline: "NOV 2018",
+        tagline: "Assessing the usability of the potential technologies to be used in the framework.",
+        body: ["Before commencing formal development of the new codebase with members of the team, there was a need to validate whether additional development effort is needed to make the proposed stack more accessible for non-computer science majors.",
+               "We assessed usability through an informal exploratory study, where in pairs, members of the research team implemented new visual experiments solely using Javascript, JsPsych and HTML/CSS. We were primarily trying to <b>isolate JsPsych to assess its usability from an end-user programmer perspective</b>.",
+               "Feedback suggested that JsPsych is easy to use, and greatly facilitates setting up the experimental structure. What was difficult is that JsPsych does not provide any stimuli-generation functionality, so without using D3.js, visualization had to be handled by custom HTML/CSS and additional helper scripts. This therefore strengthened the need to use D3.js to support the data visualization component."
+              ],
+        img: [visualsearchgif],
+      },
+      {
+        title: "Developing the Framework",
+        timeline: "DEC 2018 - MAR 2019",
+        tagline: "Implementing the framework with the proposed specification and stack.",
+        body: ["I then began developing the full framework, in accordance with the specifications discussed, and the pro/cons identified when testing the usability of JsPsych. This whole phase was extremely iterative, in which I would build small components representing a particular form of experiment, have the researchers pilot and validate all visual output, and then fix any issues before progressing to the next component.",
+              "Eventually, I reached a stage where all base experiments were implemented, and were then run on actual participants for data collection."
+              ],
+        img: null,
+      },
+      {
+        title: "Dynamic Documentation",
+        timeline: "APR - MAY 2019",
+        tagline: "Developing documentation that dynamically updates according to changes in the codebase.",
+        body: ["Once the framework was stable enough, there was one feature that I still wanted to include into this project. I found that the previous codebase had heavily suffered from poor documentation - sometimes a result of the researcher/developer forgetting to update the docs, or due to the fact that the documentation itself was fragmented and difficult to search through. I therefore wanted to develop a solution that allowed the documentation to stay updated, but with as minimal effort from the user.",
+               "My solution was what I called <b>Dynamic Documentation</b>, in which the documentation itself draws from the codebase of the framework; therefore, whenever a researcher implements a new experiment, the <b>documentation automatically updates</b>, without the researcher having to manually add this information. I saw this as a way to ensure that the documentation would ALWAYS be updated, and with standardized terminology for experiments and properties."
+              ],
+        img: [vcldocs1, vcldocs2],
+      },
+    ],
+    conclusion: {
+      title: "Conclusion",
+      body: "This project overall was a terrific learning experience - it allowed me to approach an otherwise development project with a UX perspective, and forced me to think carefully about architectural decisions. This experience also opened my eyes to who we can define as a 'user'. I think I failed to consider that I myself, a programmer, could be considered a user, especially in the context of a programming language or tool. Therefore, this project forced me to not only approach a problem from a computer-science perspective, but from a user-centric perspective."
+    }
   },
   cuberover: {
     header: {

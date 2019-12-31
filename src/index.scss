@@ -9,14 +9,14 @@ body, html {
 }
 
 html {
-  font-size: 15px;
+  font-size: 16px;
   scroll-behavior: smooth;
 }
 
 @media screen and (max-width: 767px) {
   html {
     /* Reducing base font size will reduce all rem sizes */
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
