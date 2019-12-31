@@ -43,6 +43,7 @@
       line-height: 1.5rem;
       display: flex;
       align-items: center;
+      font-family: "Karla", sans-serif;
     }
 
     .project-text-bg {
@@ -96,8 +97,8 @@
       border-radius: 10px;
       z-index: 0;
       transition: filter ease 0.5s;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
       filter: grayscale(60%) opacity(0.8);
-      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 
       &:hover {
         filter: none;

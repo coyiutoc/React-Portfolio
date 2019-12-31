@@ -17,8 +17,12 @@
 
   .landing-body {
     text-align: center;
-    width: 550px;
+    width: 600px;
     padding: 10px;
+
+    .landing-body-contents {
+      font-family: "Karla", sans-serif;
+    }
   }
 
   .tag-line {

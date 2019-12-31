@@ -15,6 +15,7 @@ $bodyPadding: 70px;
       display: flex;
       flex-direction: column;
       width: 40%;
+      max-height: 100%;
       padding-right: 30px;
 
       .section-timeline {
@@ -26,22 +27,24 @@ $bodyPadding: 70px;
 
       .section-title {
         font-size: 2.5rem;
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
       }
 
       .section-tagline {
         font-size: 1.5rem;
-        line-height: 2rem;
+        line-height: 2.5rem;
+        font-family: "Karla", sans-serif;
       }
     }
 
     .right-column {
-      padding-top: 3rem;
+      padding-top: 2.5rem;
       padding-left: 30px;
       width: 60%;
       font-size: 1.3rem;
-      line-height: 2rem;
+      line-height: 2.5rem;
       color: $light-grey;
+      font-family: "Karla", sans-serif;
 
       > div {
         padding-bottom: 2rem;

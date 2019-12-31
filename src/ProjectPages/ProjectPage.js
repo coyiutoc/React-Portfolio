@@ -15,12 +15,12 @@ const ProjectPage = () => {
   return (
     <div className="project-page">
       <HeadingBlock data={projectData.header}/>
-      {projectData.sections.map(function(section, index){
+      {"sections" in projectData ? projectData.sections.map(function(section, index){
           return  <Section 
                     key = {index}
                     data = {section}/>
-      })}
-      <Conclusion conclusion={projectData.conclusion}/>
+      }): ""}
+      {"conclusion" in projectData? <Conclusion conclusion={projectData.conclusion}/> : ""}
     </div>
   );
 }
