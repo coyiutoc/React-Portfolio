@@ -196,7 +196,7 @@ const data = {
         title: "Development",
         timeline: "FEB - MAR 2019",
         tagline: "Implementing the design solutions in Unity/C#.",
-        body: ["I then was responsible for implementing the three solutions into the currently existing MAVRC system. These features were proof-of-conceptt (POC) features, which we would then test in another series of usability studies.",
+        body: ["I then was responsible for implementing the three solutions into the currently existing MAVRC system. These features were proof-of-concept (POC) features, which we would then test in another series of usability studies.",
               ],
         img: [proxemic, gitdiffgif, xRay]
       },

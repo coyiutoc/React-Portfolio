@@ -13,6 +13,7 @@ import UCREPoster from "../assets/files/artist-always-in.jpg";
 import atlantisVideo from "../assets/files/atlantis-hub-video.mp4";
 import saveOnDemo from "../assets/files/saveon_demo.gif";
 import surfCalDemo from "../assets/files/surfcal_demo.gif";
+import surfCalER from "../assets/files/surfcal_ER_diagram.jpg";
 
 const PROJECT_DATA = {
   main: [
@@ -50,9 +51,9 @@ const PROJECT_DATA = {
       stack: "OBSERVE & INTERCEPT | SPEED DATING | THINK-ALOUDS | EXPERIENCE PROTOTYPING",
       date:  "OCT - DEC 2019",
       icons: [
-        {iconType: "IMAGE", URL: UCREPoster}
+        {iconType: "IMAGE", URL: UCREPoster, text: "Poster"}
       ],
-      readMore: true,
+      readMore: false,
     },
     {
       img: atlantisImg,
@@ -62,7 +63,7 @@ const PROJECT_DATA = {
       stack: "FIGMA",
       date:  "OCT - NOV 2019",
       icons: [
-        {iconType: "IMAGE", URL: atlantisVideo}
+        {iconType: "VIDEO", URL: atlantisVideo, text: "Video"}
       ],
       readMore: false,
     },
@@ -74,8 +75,8 @@ const PROJECT_DATA = {
       stack: "D3.JS | PYTHON | FLASK",
       date:  "OCT - DEC 2019",
       icons: [
-        {iconType: "WEBSITE", URL: "https://ketakisrao.github.io/Met/"},
-        {iconType: "GITHUB", URL: "https://github.com/ketakisrao/Met"}
+        {iconType: "WEBSITE", URL: "https://ketakisrao.github.io/Met/", text: "Website"},
+        {iconType: "GITHUB", URL: "https://github.com/ketakisrao/Met", text: "Github"}
       ],
       readMore: false,
     },
@@ -87,8 +88,8 @@ const PROJECT_DATA = {
       stack: "D3.JS | PYTHON | NODE.JS",
       date:  "JUN - JUL 2019",
       icons: [
-        {iconType: "WEBSITE", URL: "https://ubc-faculty-viz.herokuapp.com/"},
-        {iconType: "GITHUB", URL: "https://github.com/coyiutoc/UBC-Faculty-Viz"}
+        {iconType: "WEBSITE", URL: "https://ubc-faculty-viz.herokuapp.com/", text: "Website"},
+        {iconType: "GITHUB", URL: "https://github.com/coyiutoc/UBC-Faculty-Viz", text: "Github"}
       ],
       readMore: false,
     },
@@ -100,9 +101,9 @@ const PROJECT_DATA = {
       stack: "COGNITIVE WALKTHROUGH | THINK-ALOUD | USABILITY-TESTING",
       date:  "AUG - NOV 2018",
       icons: [
-        {iconType: "IMAGE", URL: saveOnDemo},
+        {iconType: "VIDEO", URL: saveOnDemo, text:"Video"},
       ],
-      readMore: true,
+      readMore: false,
     },
     {
       img: surfcalImg,
@@ -112,7 +113,9 @@ const PROJECT_DATA = {
       stack: "MYSQL | PHP | APACHE",
       date:  "MAY - JUN 2018",
       icons: [
-        {iconType: "IMAGE", URL: surfCalDemo},
+        {iconType: "IMAGE", URL: surfCalER, text: "Entity-Relationship Diagram of Database"},
+        {iconType: "VIDEO", URL: surfCalDemo, text: "Video"},
+        {iconType: "GITHUB", URL: "https://github.com/coyiutoc/surfcal", text: "Github"},
       ],
       readMore: false,
     },
@@ -124,7 +127,7 @@ const PROJECT_DATA = {
       stack: "SPSS | BRAINVISION ANALYER/RECORDER",
       date:  "AUG - DEC 2015",
       icons: [
-        {iconType: "WEBSITE", URL: "https://repository.wellesley.edu/library_awards/16/"},
+        {iconType: "WEBSITE", URL: "https://repository.wellesley.edu/library_awards/16/", text: "Article"},
       ],
       readMore: false,
     },

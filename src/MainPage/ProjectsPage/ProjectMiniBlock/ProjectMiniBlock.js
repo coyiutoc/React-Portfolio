@@ -1,6 +1,9 @@
 import React, {Component} from "react";
 import MediaQuery from 'react-responsive';
 import Fade from 'react-reveal/Fade';
+import getIcon from "../../../getIcon.js";
+import Tippy from '@tippy.js/react';
+import 'tippy.js/dist/tippy.css';
 
 import "./ProjectMiniBlock.scss";
 import "../ProjectBlockSm.scss";
@@ -37,20 +40,17 @@ class ProjectMiniBlock extends Component {
                     </button>) : ""
                   }
                 </div>
-                {this.props.icons.map(function(obj, index){
-                  if (obj.iconType === "INVISION") {
-                    return  <a href = {obj.URL} key={index}><i class="fab fa-invision"></i></a>
-                  }
-                  else if (obj.iconType === "WEBSITE") {
-                    return <a href = {obj.URL} key={index}><i class="fas fa-link"></i></a>
-                  }
-                  else if (obj.iconType === "GITHUB") {
-                    return <a href = {obj.URL} key={index}><i class="fab fa-github"></i></a>
-                  }
-                  else if (obj.iconType === "IMAGE") {
-                    return <a href = {obj.URL} key={index} target="_blank"><i class="fas fa-file-image"></i></a>
-                  }
-                })}
+                {"icons" in this.props ? this.props.icons.map(function(obj, index){
+                  return <Tippy
+                          content={obj.text}
+                          theme="bootstrap"
+                          distance={15}
+                          hideOnClick={false}
+                          placement="top"
+                        >
+                        <a href = {obj.URL} key={index} target="_blank"><i class={getIcon(obj.iconType)}></i></a>
+                      </Tippy>
+                }): ""}                 
               </div>
             </div>
             <img src = {this.props.img}></img>
@@ -81,20 +81,17 @@ class ProjectMiniBlock extends Component {
                       </button>) : ""
                     }
                     <div className="buffer"></div>
-                    {this.props.icons.map(function(obj, index){
-                        if (obj.iconType === "INVISION") {
-                          return  <a href = {obj.URL} key={index}><i className="fab fa-invision"></i></a>
-                        }
-                        else if (obj.iconType === "WEBSITE") {
-                          return <a href = {obj.URL} key={index}><i className="fas fa-link"></i></a>
-                        }
-                        else if (obj.iconType === "GITHUB") {
-                          return <a href = {obj.URL} key={index}><i className="fab fa-github"></i></a>
-                        }
-                        else if (obj.iconType === "IMAGE") {
-                          return <a href = {obj.URL} key={index} target="_blank"><i className="fas fa-file-image"></i></a>
-                        }
-                    })}
+                    {"icons" in this.props ? this.props.icons.map(function(obj, index){
+                      return <Tippy
+                              content={obj.text}
+                              theme="bootstrap"
+                              distance={15}
+                              hideOnClick={false}
+                              placement="top"
+                            >
+                            <a href = {obj.URL} key={index} target="_blank"><i class={getIcon(obj.iconType)}></i></a>
+                          </Tippy>
+                    }): ""}  
                     </div>
                   </div>
               </div>

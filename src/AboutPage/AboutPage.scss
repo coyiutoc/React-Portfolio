@@ -1,0 +1,55 @@
+@import '../colors.scss';
+
+#AboutPage {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    padding: 20vh 0 20vh 0;
+
+    .about-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        img {
+            height: 60vh;
+            border-radius: 10px;
+        }
+
+        .about-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            padding-left: 40px;
+
+            .about-header {
+                font-size: 2.5rem;
+            }
+    
+            .about-text {
+                font-family: 'Karla', sans-serif;
+                width: 30vw;
+                padding-top: 1.5rem;
+                color: $light-grey;
+                font-size: 1.1rem;
+
+                b{
+                    color: white;
+                }
+
+                @media screen and (max-width: 767px) {
+                    width: 60vw;
+                }
+            }
+
+            @media screen and (max-width: 767px) {
+                padding-top: 40px;
+                padding-left: 0px;
+            }
+        }
+    }
+
+}

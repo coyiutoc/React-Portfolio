@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import "./Navigation.scss";
 import { HashLink as Link } from 'react-router-hash-link';
+import resume from "../assets/files/Caitlin-Coyiuto-Resume.pdf";
 
 class Navigation extends Component {
 
@@ -14,8 +15,8 @@ class Navigation extends Component {
         </div>
         <div id="links">
           <Link to="/#ProjectsPage">PROJECTS</Link>
-          <a href = "/">ABOUT</a>
-          <a href = "/">RESUME</a>
+          <a href = "/About">ABOUT</a>
+          <a href = {resume} target= "_blank" >RESUME</a>
         </div>
       </div>
     );

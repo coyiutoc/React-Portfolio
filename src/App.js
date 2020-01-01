@@ -10,6 +10,7 @@ import Navigation from "./Navigation/Navigation.js";
 import LandingPage from './MainPage/LandingPage/LandingPage.js';
 import ProjectsPage from './MainPage/ProjectsPage/ProjectsPage.js';
 import ProjectPage from './ProjectPages/ProjectPage.js';
+import AboutPage from "./AboutPage/AboutPage.js";
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
             </Route>
             <Route path={"/projects/:projectID"}>
               <ProjectPage />
+            </Route>
+            <Route path={"/About"}>
+              <AboutPage />
             </Route>
           </Switch>
         </ScrollToTop>
