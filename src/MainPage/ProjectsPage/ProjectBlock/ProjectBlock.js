@@ -48,9 +48,11 @@ class ProjectBlock extends Component {
                   <div className="project-stack-sm">
                     {this.props.stack}
                   </div>
-                  <button className="project-button-sm">
+                  <Link to={this.props.pageURL}>
+                    <button className="project-button-sm">
                     READ MORE
-                  </button>
+                    </button>
+                  </Link>
                 </div>
               </div>
               <img src={this.props.img}></img>

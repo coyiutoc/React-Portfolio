@@ -3,17 +3,20 @@
 #ProjectsPage {
   background-color: $dark-grey;
   padding-bottom: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   .projects-header-container {
     padding-top: 100px;
-    padding-left: 10vw;
 
     .projects-header {
       font-family: 'menlo', serif;
       color: $orange;
       font-size: 1.2rem;
       letter-spacing: 3px;
-      padding-left: 20px;
+      text-align: center;
     }
   }
 
@@ -22,9 +25,9 @@
     flex-direction :row;
     justify-content: center;
     align-items: center;
-    width: 80vw;
+    width: 100vw;
     flex-wrap: wrap;
-    padding-left: 10vw;
+    // padding-left: 10vw;
   }
 
   #otherBlock {
@@ -35,22 +38,22 @@
     #otherBlock {
       padding-top: 0px;
       text-align: center;
-      padding-left: 0;
-    }
-  }
-
-  @media screen and (max-width: 992px) {
-
-    #otherBlock {
-      text-align: center;
-    }
-
-    .mini-projects-container {
-      flex-direction: column;
       padding-left: 0px;
     }
-  
   }
+
+  // @media screen and (max-width: 992px) {
+
+  //   #otherBlock {
+  //     text-align: center;
+  //   }
+
+  //   .mini-projects-container {
+  //     flex-direction: column;
+  //     padding-left: 0px;
+  //   }
+  
+  // }
 
   @media screen and (max-width: 767px) {
 

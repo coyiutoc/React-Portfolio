@@ -36,6 +36,7 @@ $bodyPadding: 70px;
     .heading-columns {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
 
       .column-section {
         width: 25%;

@@ -20,6 +20,14 @@ html {
   }
 }
 
+@media screen and (max-width: 1000px) {
+  html {
+    /* Reducing base font size will reduce all rem sizes */
+    font-size: 14px;
+  }
+}
+
+
 // @media screen and (min-width: 1200px) {
 //   html {
 //     /* Reducing base font size will reduce all rem sizes */

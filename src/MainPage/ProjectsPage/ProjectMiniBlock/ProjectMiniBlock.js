@@ -13,7 +13,7 @@ class ProjectMiniBlock extends Component {
   render () {
     return (
       <Fade big>
-        <MediaQuery minWidth={992}>
+        <MediaQuery minWidth={767}>
           <div className="project-mini-block">
             <div className="project-mini-content">
               <div className="project-mini-title">
@@ -56,7 +56,7 @@ class ProjectMiniBlock extends Component {
             <img src = {this.props.img}></img>
           </div>
         </MediaQuery>
-        <MediaQuery maxWidth={992}>
+        <MediaQuery maxWidth={767}>
           <div className="project-block-sm">
             <div className="project-img-sm">
               <div className="project-img-overlay">
