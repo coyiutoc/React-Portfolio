@@ -30,7 +30,7 @@ const data = {
     header: {
       img: vclheader,
       title: "VCL Web Framework",
-      role: ["Research Assistant (Developer)"],
+      role: ["Research Assistant", "(Developer)"],
       team: ["Dr. Ronald Rensink", "Madison Elliot", "VCL Correlation Team"],
       stack: ["Node.js", "D3.js", "Javascript", "JsPsych", "HTML/CSS"],
       timeline: "May 2018 - July 2019",

@@ -43,6 +43,10 @@ $bodyPadding: 70px;
         display: flex;
         flex-direction: row;
 
+        @media screen and (max-width: 767px) {
+          display: block;
+        }
+        
         > div:nth-of-type(1) {
           font-family: "menlo", serif;
           color: $orange;
@@ -50,6 +54,9 @@ $bodyPadding: 70px;
           padding-right: 20px;
           padding-top: 0.6rem;
           font-size: 0.8rem;
+          @media screen and (max-width: 767px) {
+            padding-bottom: 1rem;
+          }
         }
 
         > div:nth-of-type(2) {

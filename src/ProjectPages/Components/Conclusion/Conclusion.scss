@@ -17,6 +17,10 @@ $bodyPadding: 140px;
     align-items: left;
     width: 60%;
 
+    @media screen and (max-width: 767px) {
+      width: 100%;
+     }
+
     .conclusion-title {
       font-size: 2.5rem;
     }

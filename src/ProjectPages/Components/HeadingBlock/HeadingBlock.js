@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import MediaQuery from 'react-responsive';
 import Tippy from '@tippy.js/react';
 import 'tippy.js/dist/tippy.css';
 import Fade from 'react-reveal/Fade';
@@ -21,34 +22,66 @@ class HeadingBlock extends Component {
           <div className="heading-block-divider">
           </div>
           <div className="heading-columns">
-            <div className="column-section">
-              <div>ROLE</div>
-              <div>
-                {this.props.data.role.map(function(role, index){
-                  return  <div key={index}>{role}</div>
-                })}
+            <MediaQuery minWidth={767}>
+              <div className="column-section">
+                <div>ROLE</div>
+                <div>
+                  {this.props.data.role.map(function(role, index){
+                    return  <div key={index}>{role}</div>
+                  })}
+                </div>
               </div>
-            </div>
-            <div className="column-section">
-              <div>TEAM</div>
-              <div>
-                {this.props.data.team.map(function(person, index){
-                  return  <div key={index}>{person}</div>
-                })}
+              <div className="column-section">
+                <div>TEAM</div>
+                <div>
+                  {this.props.data.team.map(function(person, index){
+                    return  <div key={index}>{person}</div>
+                  })}
+                </div>
               </div>
-            </div>
-            <div className="column-section">
-              <div>TOOLS</div>
-              <div>
-                {this.props.data.stack.map(function(tool, index){
-                  return  <div key={index}>{tool}</div>
-                })}
+              <div className="column-section">
+                <div>TOOLS</div>
+                <div>
+                  {this.props.data.stack.map(function(tool, index){
+                    return  <div key={index}>{tool}</div>
+                  })}
+                </div>
               </div>
-            </div>
-            <div className="column-section">
-              <div>TIMELINE</div>
-              <div>{this.props.data.timeline}</div>
-            </div>
+              <div className="column-section">
+                <div>TIMELINE</div>
+                <div>{this.props.data.timeline}</div>
+              </div>
+            </MediaQuery>
+            <MediaQuery maxWidth={767}>
+              <div className="column-section">
+                <div>ROLE</div>
+                <div>
+                  {this.props.data.role.map(function(role, index){
+                    return  <div key={index}>{role}</div>
+                  })}
+                </div>
+              </div>
+              <div className="column-section">
+                <div>TEAM</div>
+                <div>
+                  {this.props.data.team.map(function(person, index){
+                    return  <div key={index}>{person}</div>
+                  })}
+                </div>
+              </div>
+              <div className="column-section">
+                <div>TOOLS</div>
+                <div>
+                  {this.props.data.stack.map(function(tool, index){
+                    return  <div key={index}>{tool}</div>
+                  })}
+                </div>
+              </div>
+              <div className="column-section">
+                <div>TIMELINE</div>
+                <div>{this.props.data.timeline}</div>
+              </div>
+            </MediaQuery>
           </div>
           <div className="heading-body">
             {ReactHtmlParser(this.props.data.body)}
