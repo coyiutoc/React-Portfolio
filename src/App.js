@@ -11,6 +11,7 @@ import LandingPage from './MainPage/LandingPage/LandingPage.js';
 import ProjectsPage from './MainPage/ProjectsPage/ProjectsPage.js';
 import ProjectPage from './ProjectPages/ProjectPage.js';
 import AboutPage from "./AboutPage/AboutPage.js";
+import Footer from "./Footer/Footer.js";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
             {/* Home page */}
             <Route exact path = "/">
               <LandingPage />
-              <ProjectsPage />            
+              <ProjectsPage />           
             </Route>
             <Route path={"/projects/:projectID"}>
               <ProjectPage />
@@ -31,6 +32,7 @@ function App() {
               <AboutPage />
             </Route>
           </Switch>
+          <Footer /> 
         </ScrollToTop>
       </div>
     </Router>

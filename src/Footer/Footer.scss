@@ -1,0 +1,40 @@
+@import '../colors.scss';
+
+.Footer {
+    border-top: 2px solid $dark-grey;
+    height: 30vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 5vw 0 5vw;
+    color: $light-grey;
+
+    @media screen and (max-width: 767px) {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .text {
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+        text-align: left;
+
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+    }
+
+    .icons .icon {
+        font-size: 2rem;
+        padding: 0 20px 20px 0;
+        transition: 0.5s;
+        color: $light-grey;
+
+        &:hover {
+            color: $orange;
+        }
+    }
+}
