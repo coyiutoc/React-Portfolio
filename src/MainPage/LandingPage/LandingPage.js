@@ -17,7 +17,7 @@ function LandingPage () {
           </div>
           <animated.div className = "landing-body-contents" style={contentProps}>
             <br></br>
-            I'm a weird mix between a <b>researcher</b> and <b>developer</b>. 
+            I'm a <b>UX Engineer</b> who values the intersection between design and development. 
             <br></br>
             <br></br>
             <div className ="tag-line">Currently, I'm pursuing my Masters in Human-Computer Interaction at Carnegie Mellon University.</div>
