@@ -3,6 +3,9 @@ import cuberoverHeader from "../assets/pages/cuberover/headercuberover.png";
 import designspec from "../assets/pages/cuberover/designspec.png";
 import visibilityToggle from "../assets/pages/cuberover/visibilitytoggle.gif";
 import newroute from "../assets/pages/cuberover/newroute.gif";
+import POIDash from "../assets/pages/cuberover/POIDashboard.gif";
+import POIColumn from "../assets/pages/cuberover/POIcolumn.gif";
+import map from "../assets/pages/cuberover/map.gif";
 
 // AsyncVR
 import asyncheaderImg from "../assets/pages/asyncvr/async-vr.png";
@@ -136,7 +139,7 @@ const data = {
         tagline: "Developing the base grid coordinate system and controls for route visibility toggling.",
         body: ["The very base component of the entire map feature is the grid. Using D3.js, I implemented an infinitely pannable grid, with customizable zoom extents. Afterwards, key objects, such as the lander, rover, and potential rover routes could be plotted. To help the operators view select routes, the Route Manager feature provides a list of all currently saved routes, and allows the user to toggle the visibility of any route.",
               ],
-        img: [visibilityToggle]
+        img: [map]
       },
       {
         title: "Creating New Routes and Segments",
@@ -146,10 +149,19 @@ const data = {
               ],
         img: [newroute]
       },
+      {
+        title: "Point of Interest Components",
+        timeline: "JAN - FEB 2019",
+        tagline: "Implementing reusable POI components and the POI management dashboard.",
+        body: ["A 'point of interest' object represents an item on the lunar surface that operators mark - they can be classified as an object of interest, or obstacle, and an image is usually taken of said object.",
+               "I implemented a reusable POI list component, which will be present on both the map and image viewer screens, in which users can view the existing list of POIs, sort and filter them.",
+               "I additionally implemented the POI Management dashboard, which is an expansion of the POI list, and displays each POI with the respective images taken of that POI."],
+        img: [POIDash]
+      }
     ],
     conclusion: {
       title: "Future Directions",
-      body: "Base functionality for the map feature has been implemented - however, there are still multiple sub-features that must be developed, such as editing a route, or plotting new objects onto the interface. Some of these sub-features will be integrated with other components within the ground interface, such as the image viewer. These are just some examples of the work head for the Spring semester."
+      body: "Base functionality for the map feature has been implemented - however, there are still multiple sub-features that must be developed, such as editing a route, or plotting new objects onto the interface. Some of these sub-features will be integrated with other components within the ground interface, such as the image viewer. These are just some examples of the work ahead for the months to come."
     }
   },
 
