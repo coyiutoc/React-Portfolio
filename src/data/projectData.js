@@ -151,7 +151,7 @@ const data = {
       },
       {
         title: "Point of Interest Components",
-        timeline: "JAN - FEB 2019",
+        timeline: "JAN - FEB 2020",
         tagline: "Implementing reusable POI components and the POI management dashboard.",
         body: ["A 'point of interest' object represents an item on the lunar surface that operators mark - they can be classified as an object of interest, or obstacle, and an image is usually taken of said object.",
                "I implemented a reusable POI list component, which will be present on both the map and image viewer screens, in which users can view the existing list of POIs, sort and filter them.",
