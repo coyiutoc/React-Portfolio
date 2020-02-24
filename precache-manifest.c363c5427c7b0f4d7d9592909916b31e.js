@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ca00665c208592ec65cdb52ddc6fbae0",
+    "revision": "bda0d83cfc736ea960cf84aa61e0b03b",
     "url": "/index.html"
   },
   {
-    "revision": "23aa258947605ececbf3",
+    "revision": "e46d158b7f0b3d9a92d5",
     "url": "/static/css/2.fddaa3a5.chunk.css"
   },
   {
-    "revision": "b5e182e30640f0bef181",
+    "revision": "f4706e9e3c2a65a6da9f",
     "url": "/static/css/main.1d14d700.chunk.css"
   },
   {
-    "revision": "23aa258947605ececbf3",
-    "url": "/static/js/2.3b7ad329.chunk.js"
+    "revision": "e46d158b7f0b3d9a92d5",
+    "url": "/static/js/2.9e02c630.chunk.js"
   },
   {
     "revision": "8349991696c8313bc786324aa2a928de",
-    "url": "/static/js/2.3b7ad329.chunk.js.LICENSE"
+    "url": "/static/js/2.9e02c630.chunk.js.LICENSE"
   },
   {
-    "revision": "b5e182e30640f0bef181",
-    "url": "/static/js/main.9dbd1963.chunk.js"
+    "revision": "f4706e9e3c2a65a6da9f",
+    "url": "/static/js/main.b4f4688d.chunk.js"
   },
   {
     "revision": "00ccf1beb4d435cfbe60",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Breach-of-Space.9582bfbe.jpg"
   },
   {
-    "revision": "9a3e304463471bd6961a41ea5621a0fd",
-    "url": "/static/media/Caitlin-Coyiuto-Resume.9a3e3044.pdf"
+    "revision": "52532b8f2bdfa0430b5b681a9c8138f8",
+    "url": "/static/media/Caitlin-Coyiuto-Resume.52532b8f.pdf"
   },
   {
     "revision": "806cfc652a37e7659b1e9cf9b573e13c",
@@ -46,6 +46,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a782bd38a9f3c9447338d797430dd544",
     "url": "/static/media/Locating-Avatar.a782bd38.jpg"
+  },
+  {
+    "revision": "5f39d4adb7ebfa705dc28b7e6da35ada",
+    "url": "/static/media/POIDashboard.5f39d4ad.gif"
+  },
+  {
+    "revision": "e2dd2c5d50ae857651b2ff9dd04f39c8",
+    "url": "/static/media/POIcolumn.e2dd2c5d.gif"
   },
   {
     "revision": "d672afe4444facafcf15aca45c08bc40",
@@ -118,6 +126,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6c0b1b2d44d8f616d689552f80eeedd2",
     "url": "/static/media/magnolias.6c0b1b2d.jpg"
+  },
+  {
+    "revision": "acf776ec8cdcd60ec54aec23bda2431a",
+    "url": "/static/media/map.acf776ec.gif"
   },
   {
     "revision": "a6f0e42532689d5b3edd92fcc974b1d5",
