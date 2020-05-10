@@ -19,9 +19,9 @@ const PROJECT_DATA = {
   main: [
     {
       img: cuberoverImg,
-      title: "CubeRover",
+      title: "Iris Rover",
       subtitle: "DEVELOPMENT",
-      text: "Development of UI components for the ground interface for CubeRover, a space rover launching to the Moon in 2021 with $79.5 million NASA funding.",
+      text: "Development of UI components for the ground interface for Iris Rover, a space rover launching to the Moon in 2021 with $79.5 million NASA funding.",
       stack: "VUE/VUEX | D3.JS | JAVASCRIPT | HTML/SCSS",
       pageURL: "/projects/cuberover",
     },

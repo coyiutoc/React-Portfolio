@@ -1,11 +1,12 @@
 // CubeRover
 import cuberoverHeader from "../assets/pages/cuberover/headercuberover.png";
 import designspec from "../assets/pages/cuberover/designspec.png";
-import visibilityToggle from "../assets/pages/cuberover/visibilitytoggle.gif";
 import newroute from "../assets/pages/cuberover/newroute.gif";
 import POIDash from "../assets/pages/cuberover/POIDashboard.gif";
-import POIColumn from "../assets/pages/cuberover/POIcolumn.gif";
 import map from "../assets/pages/cuberover/map.gif";
+import addSegDemo from "../assets/pages/cuberover/addSegDemo.gif";
+import editSegDemo from "../assets/pages/cuberover/editSegDemo.gif";
+import POIDemo from "../assets/pages/cuberover/poiDemo.gif";
 
 // AsyncVR
 import asyncheaderImg from "../assets/pages/asyncvr/async-vr.png";
@@ -117,12 +118,12 @@ const data = {
   cuberover: {
     header: {
       img: cuberoverHeader,
-      title: "CubeRover",
+      title: "Iris Rover",
       role: ["Front End Developer"],
-      team: ["Astrobotic", "CubeRover TeleOps UI Development Team"],
+      team: ["Astrobotic", "Iris Rover TeleOps UI Development Team"],
       stack: ["Vue/Vuex", "D3.js", "Javascript", "HTML/SCSS"],
       timeline: "Sep 2019 - Present",
-      body: "CubeRover is a 4.4lb lunar rover with a <b>$79.5 million NASA funding</b>, and is expected to <b>launch to the Moon in 2021</b>. Together with the private company, Astrobotic, students of CMU from multiple disciplines have come together to help build this light-weight rover. I am a part of the <b>Tele-Operations team</b>, and we are responsible for designing and implementing the features for remote controlling of the rover from Earth. I am specifically responsible for implementing the <b>map feature for the ground interface.</b>",
+      body: "Iris Rover is a 4.4lb lunar rover with a <b>$79.5 million NASA funding</b>, and is expected to <b>launch to the Moon in 2021</b>. Together with the private company, Astrobotic, students of CMU from multiple disciplines have come together to help build this light-weight rover. I am a part of the <b>Tele-Operations team</b>, and we are responsible for designing and implementing the features for remote controlling of the rover from Earth. I am specifically responsible for implementing the <b>map and point-of-interest dashboard features for the ground interface.</b>",
     },
     sections: [
       {
@@ -135,33 +136,34 @@ const data = {
       },
       {
         title: "Grid and Route Manager",
-        timeline: "OCT - NOV 2019",
+        timeline: "OCT - DEC 2019",
         tagline: "Developing the base grid coordinate system and controls for route visibility toggling.",
         body: ["The very base component of the entire map feature is the grid. Using D3.js, I implemented an infinitely pannable grid, with customizable zoom extents. Afterwards, key objects, such as the lander, rover, and potential rover routes could be plotted. To help the operators view select routes, the Route Manager feature provides a list of all currently saved routes, and allows the user to toggle the visibility of any route.",
               ],
         img: [map]
       },
       {
-        title: "Creating New Routes and Segments",
-        timeline: "NOV - DEC 2019",
-        tagline: "Implementing functionality to add a new route, and to append segments to an existing route.",
-        body: ["There are two ways to add a new route - either by using absolute (with respect to the lander) or relative (with respect to the rover) coordinates. I implemented both these functionalities, along with displaying a preview of a new route prior to saving it. Additionally, this UI allows users to add new segments onto any pre-existing route, and is supportive of both absolute and relative segments.",
+        title: "Route Creation, and Segment Editing",
+        timeline: "JAN - MAR 2020",
+        tagline: "Implementing functionality to add a new route, and to append/edit segments to an existing route.",
+        body: ["Each route is composed of multiple segments. Once a route is created, users can append multiple segments, either by inputting the absolute coordinates using the draggable modal, or by clicking on the grid.",
+               "In a similar fashion, any segment on a route can be edited through form input or grid clicks. Any points connected to that segment will automatically adjust according to the changes."
               ],
-        img: [newroute]
+        img: [addSegDemo, editSegDemo]
       },
       {
-        title: "Point of Interest Components",
-        timeline: "JAN - FEB 2020",
-        tagline: "Implementing reusable POI components and the POI management dashboard.",
+        title: "Point of Interest Dashboards",
+        timeline: "MAR - APR 2020",
+        tagline: "Implementing reusable POI components for the POI and Tag Dashboards.",
         body: ["A 'point of interest' object represents an item on the lunar surface that operators mark - they can be classified as an object of interest, or obstacle, and an image is usually taken of said object.",
-               "I implemented a reusable POI list component, which will be present on both the map and image viewer screens, in which users can view the existing list of POIs, sort and filter them.",
-               "I additionally implemented the POI Management dashboard, which is an expansion of the POI list, and displays each POI with the respective images taken of that POI."],
-        img: [POIDash]
+               "I implemented the POI Management dashboard, which displays each POI with the respective images taken of that POI. To the right of the main dashboard is a list of all POIs in a more condensed card format, in which the list can also be sorted and filtered. Expanding one of these cards also displays more POI information, or allows the user to edit any fields.",
+               "The Tag Management Dashboard is in a similar format to the POI dashboard, except instead of organizing by POIs, each row represents a Tag, and all nested objects represent a POI associated with that Tag."],
+        img: [POIDemo]
       }
     ],
     conclusion: {
       title: "Future Directions",
-      body: "Base functionality for the map feature has been implemented - however, there are still multiple sub-features that must be developed, such as editing a route, or plotting new objects onto the interface. Some of these sub-features will be integrated with other components within the ground interface, such as the image viewer. These are just some examples of the work ahead for the months to come."
+      body: "Much of the base functionalities on both the Map and Dashboard features are roughly implemented. Future work will include adding circumnavigation flows to the Map system, which is where POI objects can be placed onto the grid, and a circumnavigation route (essentially a route that circles around the object) needs to be implemented. We must also sync the front-end with our database, and making any further adjustments to design based on specification changes."
     }
   },
 
