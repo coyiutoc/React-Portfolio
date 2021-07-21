@@ -17,10 +17,10 @@ function LandingPage () {
           </div>
           <animated.div className = "landing-body-contents" style={contentProps}>
             <br></br>
-            I'm a <b>UX Engineer</b> who values the intersection between design and development. 
+            I'm a <b>Front End Engineer</b> who values the intersection between design and development. 
             <br></br>
             <br></br>
-            <div className ="tag-line">Currently, I'm pursuing my Masters in Human-Computer Interaction at Carnegie Mellon University.</div>
+            <div className ="tag-line">Currently, I'm at Amazon Web Services, helping build Amazon Connect's front end and middle tier services.</div>
           </animated.div>
         </div>
         <animated.div className = "down-arrow" style={scrollProps}>

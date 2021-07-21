@@ -19,7 +19,8 @@ class AboutPage extends Component {
                 I consider myself a strange mix between a researcher and developer - I love digging deep into 
                 human behavior, prototyping meaningful experiences, and actually developing a finished 
                 product for people to interact with.
-                <p>Currently, I'm pursuing my <b>Master in Human-Computer Interaction at Carnegie Mellon University. </b>
+                <p>Currently, I work as a <b>Front-End Developer</b> at <b>Amazon Web Services</b> on the Amazon Connect team.</p>
+                <p>Prior to that, I completed my <b>Master in Human-Computer Interaction at Carnegie Mellon University. </b>
                 My undergraduate degrees were in Neuroscience and Computer Science.</p>
                 <p>I was previously a Platform Developer intern at SAP, and have worked in multiple
                     academic research labs doing EEG, VR, or development work.
